@@ -27,6 +27,7 @@ let s:d_grey = "#202020"
 let s:l_grey = "#404040"
 
 exe "hi Comment guifg=" . s:brown
+exe "hi Conceal guifg=" . s:l_grey
 exe "hi Normal guifg=" . s:light . " guibg=" . s:black
 exe "hi NonText guifg=" . s:d_grey
 exe "hi EndOfBuffer guifg=" . s:blue
