@@ -27,22 +27,23 @@ let s:d_grey = "#202020"
 let s:l_grey = "#404040"
 
 exe "hi Comment guifg=" . s:brown
-exe "hi Conceal guifg=" . s:l_grey
-exe "hi Normal guifg=" . s:light . " guibg=" . s:black
-exe "hi NonText guifg=" . s:d_grey
+exe "hi Conceal guifg=" . s:l_grey . " guibg=" . s:black
 exe "hi EndOfBuffer guifg=" . s:blue
+exe "hi Folded guifg=" . s:blue . " guibg=" . s:d_grey
+exe "hi LineNr guifg=" . s:light
+exe "hi NonText guifg=" . s:d_grey
+exe "hi Normal guifg=" . s:light . " guibg=" . s:black
 exe "hi Pmenu guibg=" . s:d_grey
-exe "hi PmenuSel guibg=" . s:l_grey
 exe "hi PmenuSbar guibg=" . s:d_grey
+exe "hi PmenuSel guibg=" . s:l_grey
 exe "hi PmenuThumb guifg=" . s:light
 exe "hi Question guifg=" . s:green
-exe "hi StatusLine guibg=" . s:d_grey
-exe "hi WhiteSpace guifg=" . s:d_grey
 exe "hi SpecialKey guifg=" . s:l_grey
+exe "hi StatusLine guibg=" . s:d_grey
 exe "hi StatusLine guibg=" . s:d_grey
 exe "hi TabLineFill guibg=" . s:d_grey
 exe "hi TabLineSel guibg=" . s:l_grey
-exe "hi LineNr guifg=" . s:light
+exe "hi WhiteSpace guifg=" . s:d_grey
 
 exe "hi Constant guifg=" . s:orange
 exe "hi Number guifg=" . s:green
