@@ -52,7 +52,7 @@ hi! link Character Number
 hi! link Boolean Number
 hi! link Float Number
 
-execute "hi Statement guifg=" . s:orange
+exe "hi Statement guifg=" . s:orange
 hi! link Conditional Statement
 hi! link Repeat Statement
 hi! link Label Statement
@@ -60,21 +60,21 @@ hi! link Operator Constant
 hi! link Keyword Statement
 hi! link Exception Statement
 
-execute "hi Type guifg=" . s:blue
+exe "hi Type guifg=" . s:blue
 hi! link StorageClass Type
 hi! link Structure Type
 hi! link Typedef Type
 
-execute "hi Identifier guifg=" . s:magenta
+exe "hi Identifier guifg=" . s:magenta
 hi! link Function Normal
 
-execute "hi PreProc guifg=" . s:orange
+exe "hi PreProc guifg=" . s:orange
 hi! link Include PreProc
 hi! link Define PreProc
 hi! link Macro PreProc
 hi! link PreCondit PreProc
 
-execute "hi Special guifg=" . s:green
+exe "hi Special guifg=" . s:green
 hi! link SpecialChar Special
 hi! link SpecialComment Special
 exe "hi Debug guifg=" . s:magenta
