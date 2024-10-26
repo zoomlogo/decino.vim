@@ -40,10 +40,14 @@ exe "hi PmenuThumb guifg=" . s:light
 exe "hi Question guifg=" . s:green
 exe "hi SpecialKey guifg=" . s:l_grey
 exe "hi StatusLine guibg=" . s:d_grey
-exe "hi StatusLine guibg=" . s:d_grey
 exe "hi TabLineFill guibg=" . s:d_grey
 exe "hi TabLineSel guibg=" . s:l_grey
 exe "hi WhiteSpace guifg=" . s:d_grey
+hi! link SignColumn Normal
+
+exe "hi DiffAdd guifg=" . s:green
+exe "hi DiffChange guifg=" . s:orange
+exe "hi DiffDelete guifg=" . s:red
 
 exe "hi Constant guifg=" . s:orange
 exe "hi Number guifg=" . s:green
@@ -85,3 +89,8 @@ exe "hi Italic gui=italic"
 
 exe "hi Error guifg=" . s:red
 exe "hi Todo guifg=" . s:l_grey
+
+" vim-gitgutter:
+hi! link GitGutterAddLine DiffAdd
+hi! link GitGutterChangeLine DiffChange
+hi! link GitGutterDeleteLine DiffDelete
